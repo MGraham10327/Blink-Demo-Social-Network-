@@ -1,25 +1,41 @@
-<div class="jumbotron">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-3">
-				<%= gravatar_tag @user.email, size:300 %>
-			</div>
-		</div>
+<div class="profile_page">
+	<div class="chinx_page_titles">
+		<h3><%= @user.username %></h3>
 	</div>
-</div>
-<div class="chinx_page_titles">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-3">
-				<h3>About Me</h3>
-				<small><%= @user.bio %></small>
-			</div>
-		</div>
-	</div>
-</div>
 
-<div class="chinx_page_titles">
-	<h3><%= @user.username %></h3>
-	<p>Age: <%= @user.age %> </p>
-	<p>School: <%= @user.school %> </p>
+	<div class="jumbotron">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+						<%= gravatar_tag @user.email, size:300 %>
+				</div>
+			</div>
+		</div>
+	</div> <!-- End of Profile photo -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-7">
+				<div class="well">
+					<div id="About_Me">
+						<h3>About Me</h3>
+						<small><%= @user.bio %></small>
+						<p>Age: <%= @user.age %> </p>
+						<p>School: <%= @user.school %> </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> <!-- End of About Me Section -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="well">
+					<div class="Trending_Title">
+						<h3>Trending</h3>
+					</div>
+					<!-- This will contain thumbnail links and hash tags or watever -->
+				</div>
+			</div>
+		</div>
+	</div>
 </div>

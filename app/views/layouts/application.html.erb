@@ -3,10 +3,12 @@
 <head>
   <title>Chinx</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+	      
 <%= render 'layouts/header' %>
 <%= yield %>
 <% flash.each do |type, message| %>
@@ -15,5 +17,8 @@
 		<%= message %>
 	</div>
 	<% end %>
+	<footer>
+		<small>&copy; Marcus Graham &amp; 2016</small>
+	</footer>
 </body>
 </html>

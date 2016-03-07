@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
-
+  resources :tweets
+  resources :friendships, only: [:create, :destroy, :accept] do
+    member do
+      put :accept
+    end
+  end
   devise_for :users
   # get 'welcome/index'
 

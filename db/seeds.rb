@@ -5,7 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
- usernames = ["Pinkpiggy24", "PurpleReign", "Tinnaaaaaaaaa", "Tia Valentine", "Bae"]
+ usernames = ["Pinkpiggy24", "PurpleReign", "Tinnaaaaaaaaa", "Tia Valentine", "person"]
  email_array =["Tester1@yahoo.com", "Tester2@yahoo.com", "Tester3@yahoo.com", "Tester4@yahoo.com", "Tester5@yahoo.com"]
 5.times do |x|
  	User.create(username: usernames[x], email: email_array[x], password: "password", password_confirmation: "password")

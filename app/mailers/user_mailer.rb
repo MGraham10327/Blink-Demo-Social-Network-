@@ -1,7 +1,7 @@
 # Send password reset notification
 # path: app/mailers/user_mailer.rb
 class UserMailer < ActionMailer::Base
-  default :from => "no-reply@MarcusGraham.com"
+  default :from => "no-reply@Chinx.com"
 
   def password_reset(user, password)
     @user = user

@@ -24,13 +24,15 @@
 	background-color: #4d79ff;
 	min-height: 80px;
 	padding-top: 10px;
-	margin-bottom: 0px
+	margin-bottom: 0px;
+	padding-left: 0px;
 }
 
 .navbar-default .navbar-brand {
 	color: #ffffff;
 	font-weight: bold;
 	font-size: 30px;
+	padding-right: 90px;
 }
 
 .jumbotron h1, p {
@@ -50,14 +52,53 @@
 	position: relative;
 	padding-left: 1030px;
 }
-
+.UserFrontInfo {
+	position: relative;
+	padding-right: 1090px;
+	margin-right: 100px;
+	color: black;
+}
 body {
 	background-image: url(city-sky-lights-night.jpg);
 	background-position: center;
 	background-size: cover;
+	background-repeat: no-repeat;
 }
 
+#TweetsFrontPageCenter {
+	margin-bottom: 110px;
+}
 .chinx_page_titles {
 	color: #ffffff;
 	padding-left: 350px;
+}
+.profile_page {
+ float: left;
+ text-align: left;
+}
+.Trending_Title {
+	text-align: center;
+}
+#About_Me {
+	color:black;
+}
+.Logo_css {
+	margin-bottom: 90px;
+	margin-right: 0px;
+	margin-left: 0px;
+	margin-top: 0px;
+	padding-right: 0px;
+	padding-left: 0px;
+}
+.navbar-header {
+	padding-right:10px;
+}
+/*FOOTER STYLES*/
+footer {
+text-align: center;
+color: #1aa3ff;
+position: absolute;
+bottom: 0;
+width: 100%;
+height: 40px;
 }
